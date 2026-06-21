@@ -1,4 +1,4 @@
-#implentation of stack using list
+#implementation of stack using list
 class Stack:
     def __init__(self):
         self.items = []

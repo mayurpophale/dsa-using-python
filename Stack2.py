@@ -1,5 +1,5 @@
 #Implementation of stack using inheriting list class
-#jo bhi stack ka oject he wo list ka bhi oject hogaaaaa
+#jo bhi stack ka object he wo list ka bhi object hoga
 class Stack(list): # inheriting the list class
     def is_empty(self):
         return len(self) == 0
@@ -23,7 +23,7 @@ class Stack(list): # inheriting the list class
     
     #restrict that properties of list that not follow the rules of stack llike insert at any index
     def insert(self, index, data):
-        raise AttributeError("No such method in stackk")
+        raise AttributeError("No such method in stack")
 
 mystack = Stack()
 mystack.push(20)

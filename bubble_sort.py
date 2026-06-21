@@ -3,6 +3,7 @@ def bubble_sort(list):
         for i in range(len(list)-r): #har round ke baad ke value sort hogi or ek comp kam hoga
             if list[i] > list[i+1]:
                 list[i],list[i+1] = list[i+1],list[i]
+    return list
 
 #modify bubble sort
 def modify_bubble_sort(list):
@@ -14,7 +15,7 @@ def modify_bubble_sort(list):
                 list[i],list[i+1] = list[i+1],list[i]
                 flag = True
         if not flag:
-            break #aagar list k round me sort hogi to aage comperision nhi hogaa
+            break #agar list k round me sort hogi to aage comperision nhi hogaa
             
 
 l = [20,30,4,3,2,1]

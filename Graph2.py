@@ -1,4 +1,4 @@
-#Implenetion of graph using adjacency list
+#Implementation of graph using adjacency list
 
 class Graph:
     def __init__(self,vno):
@@ -10,14 +10,14 @@ class Graph:
             self.adj_list[u].append((v,wei))
             self.adj_list[v].append((u,wei))
         else: 
-            print("Invaild")
+            print("Invalid")
     
     def remove(self,u,v):
         if 0<=u<self.vertex_count and 0<=v<self.vertex_count:
             self.adj_list[u] = [(v,wei) for vertex,wei in self.adj_list[u] if vertex !=v ]
             self.adj_list[v] = [(u,wei) for vertex,wei in self.adj_list[v] if vertex !=u ]
         else:
-            print("Invaild")
+            print("Invalid")
     
     def has_edge(self,u,v):
         if 0<=u<self.vertex_count and 0<=v<self.vertex_count:

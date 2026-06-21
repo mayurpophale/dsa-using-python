@@ -1,5 +1,5 @@
 #Implementation of stack using linked list 
-from SLL import * #improting all things of sll
+from SLL import * #importing all things of sll
 
 class Stack:
     def __init__(self):
